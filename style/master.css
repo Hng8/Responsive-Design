@@ -107,6 +107,64 @@ header .overlay .order {
         width: 25%;
     }
 }
+
+/* Start Pricing Plans*/
+
+.pricing-table {
+    background-color: #444;
+    color: #fff;
+    padding: 50px 0;
+}
+.pricing-table .h1 {
+    margin: 0 0 40px;
+    font-size: 50px;
+}
+.pricing-table .pricing-plan {
+    border: 3px solid #fff;
+    padding: 20px 0;
+}
+.pricing-table .pricing-plan h3 {
+    margin: 0 0 10px;
+    font-size: 26px;
+}
+.pricing-table .pricing-plan .pricing {
+    display: inline-block;
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: #bfbfbf;
+}
+.pricing-table .pricing-plan ul {
+    line-height: 2;
+    font-size: 18px;
+}
+
+@media (max-width: 767px) {
+    .pricing-table .pricing-plan {
+        width: 100% ;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 768px) {
+    .pricing-table .pricing-plan {
+        width: 100% ;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 992px) {
+    .pricing-table .pricing-plan:not(.Master) {
+        margin-right: 1%;
+    }
+    .pricing-table .pricing-plan {
+        width: 32.66666%;
+        margin-bottom: 0;
+    }
+    .pricing-table .pricing-plan.Basic {
+        left: 33.66666%;
+    }
+    .pricing-table .pricing-plan.Professional {
+        right: 33.66666%;
+    }
+}
 /* Mobile devices */
 @media (max-width: 767px) { 
     h1 {
@@ -227,4 +285,9 @@ from the sections becuasae it is a class set on the html classes */
 }
 .responsive-image {
     width: 100%;
+}
+.classic-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
