@@ -165,6 +165,92 @@ header .overlay .order {
         right: 33.66666%;
     }
 }
+
+/* Start Testimonials */
+.testimonials {
+    padding: 50px 0;
+}
+
+.testimonials .h1 {
+    font-size: 50px;
+    margin: 0 0 20px;
+    color: #555;
+}
+.testimonials .person-say {
+    background-color: #eee;
+    padding: 20px;
+    margin: 0 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+}
+.testimonials .person-say .avatar {
+    width: 120px;
+    margin-right: 20px;
+}
+.testimonials .person-say .avatar img {
+    width: 120px;
+}
+.testimonials .person-say h3 {
+    margin: 5px 0 10px;
+}
+.testimonials .person-say p {
+    margin: 0;
+    line-height: 1.7;
+    width: calc(100% - 140px) ;
+}
+@media (max-width: 767px) {
+    .testimonials .person-say {
+        width: 100%;
+    }
+    .testimonials .person-say .avatar {
+        float: none;
+        margin: auto;
+    }
+    .testimonials .person-say h3 {
+        float: none;
+        text-align: center;
+    }
+    .testimonials .person-say p {
+        float: none;
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) { 
+    .testimonials .person-say:first-of-type {
+        width: 100%;
+    }
+    .testimonials .person-say:not(:first-of-type) {
+        width: 49%;
+    }
+    .testimonials .person-say:last-of-type {
+        margin-left: 2%;
+    }
+    .testimonials .person-say:not(:first-of-type) .avatar {
+        float: none;
+        margin: auto;
+    }
+    .testimonials .person-say:not(:first-of-type) h3 {
+        float: none;
+        text-align: center;
+    }
+    .testimonials .person-say:not(:first-of-type) p {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .testimonials .person-say:first-of-type {
+        width: 100%;
+    }
+    .testimonials .person-say:not(:first-of-type) {
+        width: 49%;
+    }
+    .testimonials .person-say:last-of-type {
+        margin-left: 2%;
+    }
+}
+
 /* Mobile devices */
 @media (max-width: 767px) { 
     h1 {
@@ -290,4 +376,12 @@ from the sections becuasae it is a class set on the html classes */
     margin: 0;
     padding: 0;
     list-style: none;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.img-thumbnail {
+    padding: 3px;
+    background-color: #fff;
+    border: 1px solid #ccc;
 }
