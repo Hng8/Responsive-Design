@@ -295,6 +295,32 @@ header .overlay .order {
 .information .info-content > div:not(:first-of-type) {
     display: none;
 }
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+}
+
+footer .copyright,
+footer .design {
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 767px) {
+    footer .copyright,
+    footer .design {
+        width: 100%;
+}
+}
+
+@media (min-width: 768px) {
+    footer .copyright,
+    footer .design {
+        width: 50%;
+}
+}
 /* Mobile devices */
 @media (max-width: 767px) { 
     h1 {
